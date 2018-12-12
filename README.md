@@ -40,13 +40,13 @@ Outputs are:
 + N = 10
 + dt = 0.1
 
-Optimizer  for these values considered one second duration in which its try to determine a corrective trajectory.
+Optimizer for these values considered one second duration in which its try to determine a corrective trajectory.
 
 
 ### Polynomial Fitting and MPC Preprocessing:
-Waypoints from the simulator are transformed to the car coordinate system. Then a 3rd degree polynomial is fitted to the transformed waypoints. TUsing these polynomial coefficients cte and epsi are calculated. Also, these values are used by the solver to create a reference trajectory.
+Waypoints from the simulator are transformed to the car coordinate system. Then a 3rd degree polynomial is fitted to the transformed waypoints. Using these polynomial coefficients, cte and epsi are calculated. Also, these values are used by the solver to create a reference trajectory.
 
 ### Model Predictive Control with Latency
 
 +  original kinematic equations depend on the actuations from the previous timestep, but with a delay of 100ms (timestep interval). The actuations are applied another timestep later, so the equations have been altered to account for this.
-+ additional penalty (combination of velocity and delta) was added and result is much more reliable
++ an additional penalty (combination of velocity and delta) was added, and thus the result is much more reliable
