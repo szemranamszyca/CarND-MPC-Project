@@ -40,7 +40,7 @@ Outputs are:
 + N = 10
 + dt = 0.1
 
-Optimizer for these values considered one second duration in which its try to determine a corrective trajectory.
+The optimizer for these values considered one second duration, during which it tried to determine a corrective trajectory.
 
 
 ### Polynomial Fitting and MPC Preprocessing:
